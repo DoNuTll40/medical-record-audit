@@ -1,18 +1,21 @@
-Copyright (c) 2025 โรงพยาบาลอากาศอำนวย
+MIT License
 
-สงวนลิขสิทธิ์ทั้งหมด
+Copyright (c) 2025 Nuttawoot Chawna
 
-ซอร์สโค้ดและเอกสารประกอบนี้เป็นทรัพย์สินทางปัญญาของ
-โรงพยาบาลอากาศอำนวย (ต่อไปนี้เรียกว่า "เจ้าของผลงาน")
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-การใช้งานใด ๆ ไม่ว่าจะเป็นการทำซ้ำ คัดลอก ดัดแปลง เผยแพร่
-จำหน่าย หรือนำไปใช้ประโยชน์ในเชิงพาณิชย์หรือไม่ก็ตาม
-ต้องได้รับอนุญาตเป็นลายลักษณ์อักษรจากเจ้าของผลงานก่อนเท่านั้น
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-ห้ามนำซอร์สโค้ดนี้ไปใช้งานภายนอกองค์กรโดยไม่ได้รับการอนุญาต
-
-หากองค์กรหรือบุคคลใดประสงค์จะนำซอร์สโค้ดนี้ไปใช้งาน
-ต้องทำการติดต่อเพื่อขออนุญาตอย่างเป็นทางการจาก
-โรงพยาบาลอากาศอำนวย
-
-ผู้ละเมิดจะถูกดำเนินการตามกฎหมายที่เกี่ยวข้อง
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
