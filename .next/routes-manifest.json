@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "/mra",
+  "redirects": [
+    {
+      "source": "/mra/",
+      "destination": "/mra",
+      "basePath": false,
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^/mra/$"
+    },
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    },
+    {
+      "source": "/",
+      "destination": "/mra",
+      "basePath": false,
+      "statusCode": 307,
+      "regex": "^(?!/mra/_next)/(?:/)?$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/pdf/[id]",
+      "regex": "^/pdf/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/pdf/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/auth/login",
+      "regex": "^/auth/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/login(?:/)?$"
+    },
+    {
+      "page": "/forms/ipd",
+      "regex": "^/forms/ipd(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/forms/ipd(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/settings/form-items",
+      "regex": "^/settings/form\\-items(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/settings/form\\-items(?:/)?$"
+    },
+    {
+      "page": "/settings/overall-findings",
+      "regex": "^/settings/overall\\-findings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/settings/overall\\-findings(?:/)?$"
+    },
+    {
+      "page": "/settings/review-status",
+      "regex": "^/settings/review\\-status(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/settings/review\\-status(?:/)?$"
+    },
+    {
+      "page": "/settings/service-units",
+      "regex": "^/settings/service\\-units(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/settings/service\\-units(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

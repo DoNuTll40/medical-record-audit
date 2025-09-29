@@ -1,0 +1,3 @@
+module.exports=[54799,(a,b,c)=>{b.exports=a.x("crypto",()=>require("crypto"))},72280,a=>{"use strict";a.s(["default",()=>e,"generateMetadata",()=>d]);var b=a.i(7997),c=a.i(24837);async function d({params:a}){let{id:b}=await a,d=await (0,c.cryptoDecode)(decodeURIComponent(b));return{title:`MRA | ${d}`,description:"ระบบตรวจสอบคุณภาพเวชระเบียนผู้ป่วย | PDF"}}async function e({children:a}){return(0,b.jsx)("div",{children:a})}}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__eef85c9c._.js.map

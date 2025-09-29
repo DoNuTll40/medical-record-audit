@@ -1,0 +1,37 @@
+# /etc/systemd/system/medical-record-audit.service
+[Unit]
+Description=Medical Record Audit FE (Next.js) Service
+After=network.target
+
+[Service]
+# >>> ปรับผู้ใช้งานให้ตรงกับเครื่องปลายทาง <<<
+User=www-data | root | user
+Group=www-data | root | wheel | http
+
+# ตำแหน่งโฟลเดอร์โปรเจกต์ (มี package.json, server.js/.next)
+WorkingDirectory= /var/www/http/medical-record-audit | /opt/medical-record-audit
+
+# โหลดตัวแปรจากไฟล์ .env ถ้ามี
+EnvironmentFile=-/var/www/http/medical-record-audit/.env | /opt/medical-record-audit/.env
+
+# ถ้าใช้ server.js เอง ให้ใช้บรรทัดนี้
+ExecStart=/usr/bin/node server.js
+
+# ถ้าใช้ Next standalone (มี .next/standalone/server.js) ให้ใช้บรรทัดนี้แทน
+# ExecStart=/usr/bin/node .next/standalone/server.js
+
+# ถ้าต้องการตั้งพอร์ตแบบชัดๆ
+Environment=PORT=5108
+# ถ้ามี basePath /mra ให้กำกับผ่าน .env หรือ config.json ตามที่ทำไว้
+
+Restart=always
+RestartSec=5
+# เพิ่ม file descriptors เผื่อโหลดเยอะ
+LimitNOFILE=65535
+
+# ให้ log โผล่ journalctl
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

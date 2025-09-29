@@ -1,0 +1,20 @@
+{
+  "node": {
+    "7f8ecc44cd09676109bff822f4a8d60f1bb0617592": {
+      "workers": {
+        "app/(public)/page": {
+          "moduleId": "10703",
+          "async": false,
+          "exportedName": "cryptoEncode",
+          "filename": "src/config/crypto.mjs"
+        }
+      },
+      "layer": {
+        "app/(public)/page": "action-browser"
+      },
+      "exportedName": "cryptoEncode",
+      "filename": "src/config/crypto.mjs"
+    }
+  },
+  "edge": {}
+}
