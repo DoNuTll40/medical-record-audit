@@ -1,6 +1,6 @@
 {
   "name": "medical-record-audit",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "dev": "npm run prebuild && next dev -p 80 --turbopack",
@@ -31,7 +31,7 @@
     "dotenv": "^17.2.2",
     "framer-motion": "^12.23.14",
     "lucide-react": "^0.544.0",
-    "material-ripple-effects": "^2.0.1",
+    "material-ripple-effects": "github:DoNuTll40/ripple-effects-auto-darklight#v2.0.1-DONUT",
     "moment": "^2.30.1",
     "next": "15.5.3",
     "next-pwa": "^5.6.0",
@@ -44,12 +44,17 @@
     "react-idle-timer": "^5.7.2",
     "react-pdf-tailwind": "^2.1.0"
   },
+  "overrides": {
+    "material-ripple-effects": "github:DoNuTll40/ripple-effects-auto-darklight#v2.0.1-DONUT"
+  },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0",
     "tailwindcss": "^4"
   }
 }
