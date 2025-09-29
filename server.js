@@ -1,3 +1,4 @@
+require('dotenv').config();
 const path = require('path')
 
 const dir = path.join(__dirname)
@@ -5,7 +6,7 @@ const dir = path.join(__dirname)
 process.env.NODE_ENV = 'production'
 process.chdir(__dirname)
 
-const currentPort = parseInt(process.env.PORT, 10) || 3000
+const currentPort = parseInt(process.env.PORT)
 const hostname = '0.0.0.0'
 
 let keepAliveTimeout = parseInt(process.env.KEEP_ALIVE_TIMEOUT, 10)
