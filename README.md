@@ -17,7 +17,8 @@ A hospital system for auditing medical records.
 - Git
 
 ```bash
-node server.js 
+npm ci
+node server.js // เพื่อทดสอบ
 ```
 > แก้ไขไฟล์ ที่อยู่ในโฟล์เดอร์ deploy / medical-record-audit.service ให้ตรงตาม linux ของผู้ใช้
 ---
@@ -32,5 +33,5 @@ sudo systemctl status medical-record-audit -n 50
 ---
 ### 3) สิทธิ์ไฟล์:
 ``` bash
-sudo chown -R www-data:www-data /opt/medical-record-audit
+sudo chown -R {user}:{user} /opt/medical-record-audit
 ```

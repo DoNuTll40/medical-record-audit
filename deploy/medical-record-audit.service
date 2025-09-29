@@ -1,35 +1,53 @@
+
+---
+
+## ไฟล์ systemd (เวอร์ชันใช้งานจริง)
+เลือก **หนึ่ง path** เท่านั้น อย่าใส่เครื่องหมาย `|`
+
+```ini
 # /etc/systemd/system/medical-record-audit.service
 [Unit]
-Description=Medical Record Audit FE (Next.js) Service
+Description=Medical Record Audit FE (Next.js)
 After=network.target
 
 [Service]
-# >>> ปรับผู้ใช้งานให้ตรงกับเครื่องปลายทาง <<<
-User=www-data | root | user
-Group=www-data | root | wheel | http
+# ปรับผู้ใช้ให้ตรงกับเครื่อง (แนะนำ user ปกติ ไม่ใช่ root)
+User=www-data
+Group=www-data
 
-# ตำแหน่งโฟลเดอร์โปรเจกต์ (มี package.json, server.js/.next)
-WorkingDirectory= /var/www/http/medical-record-audit | /opt/medical-record-audit
+# ที่อยู่โปรเจกต์
+WorkingDirectory=/opt/medical-record-audit
 
-# โหลดตัวแปรจากไฟล์ .env ถ้ามี
-EnvironmentFile=-/var/www/http/medical-record-audit/.env | /opt/medical-record-audit/.env
+# โหลดตัวแปรจาก .env (ถ้าไม่มีไฟล์ ให้ข้ามได้ด้วย -)
+EnvironmentFile=-/opt/medical-record-audit/.env
 
-# ถ้าใช้ server.js เอง ให้ใช้บรรทัดนี้
-ExecStart=/usr/bin/node server.js
+# โหมด A: ใช้ Next standalone
+ExecStart=/usr/bin/env node .next/standalone/server.js
 
-# ถ้าใช้ Next standalone (มี .next/standalone/server.js) ให้ใช้บรรทัดนี้แทน
-# ExecStart=/usr/bin/node .next/standalone/server.js
+# โหมด B: ถ้าใช้ custom server.js ให้คอมเมนต์ A แล้วเปิดบรรทัดนี้
+# ExecStart=/usr/bin/env node server.js
 
-# ถ้าต้องการตั้งพอร์ตแบบชัดๆ
+# ค่าพื้นฐาน
+Environment=NODE_ENV=production
 Environment=PORT=5108
-# ถ้ามี basePath /mra ให้กำกับผ่าน .env หรือ config.json ตามที่ทำไว้
 
-Restart=always
-RestartSec=5
-# เพิ่ม file descriptors เผื่อโหลดเยอะ
+# restart และทรัพยากร
+Restart=on-failure
+RestartSec=3
 LimitNOFILE=65535
 
-# ให้ log โผล่ journalctl
+# hardening เบื้องต้น
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+NoNewPrivileges=true
+CapabilityBoundingSet=
+RestrictRealtime=true
+LockPersonality=true
+MemoryDenyWriteExecute=true
+
+# logs
+SyslogIdentifier=medical-record-audit
 StandardOutput=journal
 StandardError=journal
 
