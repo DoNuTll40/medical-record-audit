@@ -1,61 +1,44 @@
-name: Bug report
-description: รายงานบั๊กให้ทีมแก้ก่อนจะลามไปโรงอาหาร
-title: "[Bug] คำอธิบายสั้นๆ"
-labels: ["bug", "needs-triage"]
-assignees: []
+name: Bug Report
+description: รายงานข้อผิดพลาดที่พบในระบบ
+title: "[Bug]: "
+labels: ["bug"]
 body:
   - type: textarea
     id: description
     attributes:
-      label: อาการที่เจอ
-      description: บอกให้ชัด เกิดอะไร ควรเกิดอะไร
-      placeholder: กดปุ่ม "บันทึก" แล้วหน้าค้าง ไม่ขึ้น Toast...
+      label: คำอธิบายปัญหา
+      description: อธิบายอาการปัญหาให้ละเอียด
     validations:
       required: true
+
   - type: textarea
     id: steps
     attributes:
-      label: ขั้นตอนทำให้เกิดบั๊ก
-      description: เขียนเป็นข้อ 1-2-3 ให้คนอื่น reproduce ได้
+      label: ขั้นตอนการทำให้เกิดปัญหา
+      description: กรุณาระบุขั้นตอนเพื่อให้ทีมสามารถทำซ้ำได้
       placeholder: |
-        1. ไปหน้า ... 
-        2. กรอก ... 
-        3. กด ...
+        1. ไปที่หน้า...
+        2. กดปุ่ม...
+        3. สังเกตอาการ...
     validations:
       required: true
+
   - type: textarea
     id: expected
     attributes:
-      label: ควรได้ผลลัพธ์แบบไหน
-      placeholder: ควรขึ้น "บันทึกสำเร็จ" และรีเฟรชตาราง
+      label: ผลลัพธ์ที่คาดหวัง
+      placeholder: ควรจะแสดงข้อความ “บันทึกสำเร็จ”
     validations:
       required: true
+
   - type: textarea
     id: actual
     attributes:
-      label: ได้ผลลัพธ์จริง
-      placeholder: หน้าค้าง ไม่ขึ้นอะไร
-    validations:
-      required: true
+      label: ผลลัพธ์ที่เกิดขึ้นจริง
+      placeholder: ไม่แสดงข้อความ หรือเกิด error
+
   - type: input
     id: version
     attributes:
-      label: เวอร์ชัน/ENV
-      placeholder: 1.0.2 / PROD หรือ DEV
-  - type: input
-    id: url
-    attributes:
-      label: URL/หน้าที่เจอ
-      placeholder: /mra/forms
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: รูป/Log
-      description: แนบภาพหรือ log ที่เกี่ยวข้อง
-  - type: dropdown
-    id: severity
-    attributes:
-      label: ความรุนแรง
-      options: ["P1 - ดับไฟก่อน", "P2 - เร็วหน่อย", "P3 - ว่างค่อยทำ"]
-    validations:
-      required: true
+      label: เวอร์ชันของระบบ/สภาพแวดล้อม
+      placeholder: เช่น 1.0.2 / Production

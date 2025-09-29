@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ช่องทางติดต่อด่วน
+    url: mailto:it-support@example.com
+    about: ใช้เมื่อระบบ Production ไม่สามารถใช้งานได้

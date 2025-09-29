@@ -1,0 +1,27 @@
+name: Feature Request
+description: เสนอคุณสมบัติหรือฟังก์ชันใหม่
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: ปัญหาที่พบหรือความต้องการ
+      description: อธิบายว่าทำไมฟีเจอร์นี้จึงจำเป็น
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: แนวทางที่เสนอ
+      description: ระบุฟังก์ชันหรือการทำงานที่อยากให้เพิ่ม
+      placeholder: เพิ่มปุ่ม “ส่งออกเป็น PDF” ในหน้า...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: แนวทางอื่นที่พิจารณา
+      placeholder: ใช้ระบบ export ที่มีอยู่ แต่ยังไม่สะดวก

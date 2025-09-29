@@ -1,0 +1,21 @@
+name: Improvement
+description: ขอปรับปรุงสิ่งที่มีอยู่ให้ดียิ่งขึ้น (UI/UX/Performance/Docs)
+title: "[Improve]: "
+labels: ["improvement"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: หมวดการปรับปรุง
+      options: ["UI/UX", "Performance", "Documentation", "Other"]
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: รายละเอียดการปรับปรุง
+      description: ระบุให้ชัดเจนว่าควรแก้ตรงไหน และจะได้ประโยชน์อย่างไร
+      placeholder: ตารางโหลดช้าเมื่อมีข้อมูลมากกว่า 1000 rows ควรใช้ server-side rendering
+    validations:
+      required: true
