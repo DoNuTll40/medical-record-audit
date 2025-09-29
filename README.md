@@ -5,22 +5,20 @@ A hospital system for auditing medical records.
 
 ## คุณสมบัติ
 - Next.js (App Router) + Tailwind
-- รองรับ basePath เช่น `/mra`
 - เปลี่ยน API URL ได้หลัง ผ่าน `public/config.json`
 - รันด้วย systemd หรือ PM2
 
 ---
 
 ## 1) เตรียมเครื่อง
-- Node.js LTS (>= 18)
-- Nginx (แนะนำให้ทำ reverse proxy)
+- Node.js LTS (>= 22)
 - Git
 
 ```bash
 npm ci
 node server.js // เพื่อทดสอบ
 ```
-> แก้ไขไฟล์ ที่อยู่ในโฟล์เดอร์ deploy / medical-record-audit.service ให้ตรงตาม linux ของผู้ใช้
+> แก้ไขไฟล์ ที่อยู่ในโฟล์เดอร์ `deploy/medical-record-audit.service` ให้ตรงตาม linux ของผู้ใช้
 ---
 ## 2) รันคำสั่งเพื่อรัน
 ``` bash
