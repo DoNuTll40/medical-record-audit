@@ -7,6 +7,5 @@
   "/(public)/settings/review-status/page": "/settings/review-status",
   "/(public)/settings/service-units/page": "/settings/service-units",
   "/_not-found/page": "/_not-found",
-  "/api/config/route": "/api/config",
   "/auth/login/page": "/auth/login"
 }

@@ -1,4 +1,20 @@
 {
-  "node": {},
+  "node": {
+    "7f5543c4b46aa17a424f33f3a162a76505e62385f6": {
+      "workers": {
+        "app/auth/login/page": {
+          "moduleId": "99625",
+          "async": false,
+          "exportedName": "cryptoEncode",
+          "filename": "src/config/crypto.mjs"
+        }
+      },
+      "layer": {
+        "app/auth/login/page": "action-browser"
+      },
+      "exportedName": "cryptoEncode",
+      "filename": "src/config/crypto.mjs"
+    }
+  },
   "edge": {}
 }

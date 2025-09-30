@@ -7,6 +7,5 @@
   "/(public)/settings/review-status/page": "app/(public)/settings/review-status/page.js",
   "/(public)/settings/service-units/page": "app/(public)/settings/service-units/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/config/route": "app/api/config/route.js",
   "/auth/login/page": "app/auth/login/page.js"
 }
