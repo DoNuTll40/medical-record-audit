@@ -1,6 +1,6 @@
 {
   "name": "medical-record-audit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "scripts": {
     "dev": "npm run prebuild && next dev -p 80 --turbopack",

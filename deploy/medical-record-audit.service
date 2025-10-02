@@ -2,7 +2,7 @@
 ---
 
 ## ไฟล์ systemd (เวอร์ชันใช้งานจริง)
-เลือก **หนึ่ง path** เท่านั้น อย่าใส่เครื่องหมาย `|`
+เลือก **หนึ่ง path**
 
 ```ini
 # /etc/systemd/system/medical-record-audit.service
