@@ -1,6 +1,6 @@
 {
   "name": "medical-record-audit",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "dev": "npm run prebuild && next dev -p 80 --turbopack",
@@ -29,7 +29,7 @@
     "ag-grid-react": "^34.2.0",
     "axios": "^1.12.1",
     "crypto-js": "^4.2.0",
-    "dotenv": "^17.2.3",
+    "dotenv": "^17.2.2",
     "framer-motion": "^12.23.22",
     "lucide-react": "^0.544.0",
     "material-ripple-effects": "github:DoNuTll40/ripple-effects-auto-darklight#v2.0.1-DONUT",
