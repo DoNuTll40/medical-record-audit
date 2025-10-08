@@ -1,7 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/": {
+    "/settings/review-status": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,8 +14,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
+      "srcRoute": "/settings/review-status",
+      "dataRoute": "/settings/review-status.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -49,7 +49,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/settings/service-units": {
+    "/settings/form-items": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -62,8 +62,32 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/settings/service-units",
-      "dataRoute": "/settings/service-units.rsc",
+      "srcRoute": "/settings/form-items",
+      "dataRoute": "/settings/form-items.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -98,30 +122,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/settings/form-items": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/settings/form-items",
-      "dataRoute": "/settings/form-items.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/settings/overall-findings": {
       "experimentalBypassFor": [
         {
@@ -146,7 +146,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/auth/login": {
+    "/settings/service-units": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -159,8 +159,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/auth/login",
-      "dataRoute": "/auth/login.rsc",
+      "srcRoute": "/settings/service-units",
+      "dataRoute": "/settings/service-units.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -194,7 +194,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/settings/review-status": {
+    "/auth/login": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -207,8 +207,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/settings/review-status",
-      "dataRoute": "/settings/review-status.rsc",
+      "srcRoute": "/auth/login",
+      "dataRoute": "/auth/login.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
