@@ -1,5 +1,6 @@
 {
   "/(public)/forms/ipd/page": "app/(public)/forms/ipd/page.js",
+  "/(public)/forms/opd-er/page": "app/(public)/forms/opd-er/page.js",
   "/(public)/page": "app/(public)/page.js",
   "/(public)/pdf/[id]/page": "app/(public)/pdf/[id]/page.js",
   "/(public)/settings/form-items/page": "app/(public)/settings/form-items/page.js",

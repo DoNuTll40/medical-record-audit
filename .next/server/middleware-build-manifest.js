@@ -2,13 +2,13 @@ globalThis.__BUILD_MANIFEST = {
   "pages": {
     "/_app": [
       "static/chunks/a41dbe67f1447a5e.js",
-      "static/chunks/405af07c820d8f8c.js",
-      "static/chunks/turbopack-aea3f09e3e8fb404.js"
+      "static/chunks/b7d3d778ab0346dd.js",
+      "static/chunks/turbopack-d222edaa08c07f09.js"
     ],
     "/_error": [
       "static/chunks/b32851cd04a9508b.js",
-      "static/chunks/405af07c820d8f8c.js",
-      "static/chunks/turbopack-55c95123cc13ae26.js"
+      "static/chunks/b7d3d778ab0346dd.js",
+      "static/chunks/turbopack-04fa38dc1ffcb520.js"
     ]
   },
   "devFiles": [],
@@ -18,13 +18,12 @@ globalThis.__BUILD_MANIFEST = {
   ],
   "lowPriorityFiles": [],
   "rootMainFiles": [
-    "static/chunks/94f2f57c56f06d58.js",
-    "static/chunks/d847a0ee8c76eccc.js",
-    "static/chunks/8961480a5e28408c.js",
+    "static/chunks/9fb10cdacc91bf29.js",
+    "static/chunks/b91336ac27080d81.js",
+    "static/chunks/63d45323e822c70d.js",
     "static/chunks/56a3a7cef15e857c.js",
-    "static/chunks/9d4347e5c4cf1440.js",
-    "static/chunks/00032ab300cadfcf.js",
-    "static/chunks/turbopack-2dd1891239a7ab0a.js"
+    "static/chunks/4436fc65f91cd60a.js",
+    "static/chunks/turbopack-3455d1df0175922c.js"
   ],
   "ampFirstPages": []
 };

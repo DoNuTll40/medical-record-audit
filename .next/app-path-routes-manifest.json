@@ -1,5 +1,6 @@
 {
   "/(public)/forms/ipd/page": "/forms/ipd",
+  "/(public)/forms/opd-er/page": "/forms/opd-er",
   "/(public)/page": "/",
   "/(public)/pdf/[id]/page": "/pdf/[id]",
   "/(public)/settings/form-items/page": "/settings/form-items",
