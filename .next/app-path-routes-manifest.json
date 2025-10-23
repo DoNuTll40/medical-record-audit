@@ -1,12 +1,15 @@
 {
   "/(public)/forms/ipd/page": "/forms/ipd",
-  "/(public)/forms/opd-er/page": "/forms/opd-er",
+  "/(public)/forms/opd/page": "/forms/opd",
   "/(public)/page": "/",
-  "/(public)/pdf/[id]/page": "/pdf/[id]",
+  "/(public)/pdf/ipd/[id]/page": "/pdf/ipd/[id]",
+  "/(public)/pdf/opd/[id]/page": "/pdf/opd/[id]",
+  "/(public)/settings/clinic-details/page": "/settings/clinic-details",
   "/(public)/settings/form-items/page": "/settings/form-items",
   "/(public)/settings/overall-findings/page": "/settings/overall-findings",
   "/(public)/settings/review-status/page": "/settings/review-status",
   "/(public)/settings/service-units/page": "/settings/service-units",
   "/_not-found/page": "/_not-found",
-  "/auth/login/page": "/auth/login"
+  "/auth/login/page": "/auth/login",
+  "/dev/pdf/page": "/dev/pdf"
 }

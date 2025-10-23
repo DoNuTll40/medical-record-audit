@@ -35,12 +35,20 @@
   },
   "dynamicRoutes": [
     {
-      "page": "/pdf/[id]",
-      "regex": "^/pdf/([^/]+?)(?:/)?$",
+      "page": "/pdf/ipd/[id]",
+      "regex": "^/pdf/ipd/([^/]+?)(?:/)?$",
       "routeKeys": {
         "nxtPid": "nxtPid"
       },
-      "namedRegex": "^/pdf/(?<nxtPid>[^/]+?)(?:/)?$"
+      "namedRegex": "^/pdf/ipd/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/pdf/opd/[id]",
+      "regex": "^/pdf/opd/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/pdf/opd/(?<nxtPid>[^/]+?)(?:/)?$"
     }
   ],
   "staticRoutes": [
@@ -57,22 +65,34 @@
       "namedRegex": "^/auth/login(?:/)?$"
     },
     {
+      "page": "/dev/pdf",
+      "regex": "^/dev/pdf(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dev/pdf(?:/)?$"
+    },
+    {
       "page": "/forms/ipd",
       "regex": "^/forms/ipd(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/forms/ipd(?:/)?$"
     },
     {
-      "page": "/forms/opd-er",
-      "regex": "^/forms/opd\\-er(?:/)?$",
+      "page": "/forms/opd",
+      "regex": "^/forms/opd(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/forms/opd\\-er(?:/)?$"
+      "namedRegex": "^/forms/opd(?:/)?$"
     },
     {
       "page": "/_not-found",
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/settings/clinic-details",
+      "regex": "^/settings/clinic\\-details(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/settings/clinic\\-details(?:/)?$"
     },
     {
       "page": "/settings/form-items",

@@ -1,0 +1,3 @@
+{
+  "/(public)/pdf/opd/[id]/page": "app/(public)/pdf/opd/[id]/page.js"
+}

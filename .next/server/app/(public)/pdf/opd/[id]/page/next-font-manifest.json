@@ -1,0 +1,17 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/src/app/(public)/pdf/opd/[id]/page": [
+      "static/media/f225d9515e7d0fa4-s.p.e323c55c.woff2",
+      "static/media/74b7596da41e3c19-s.p.b9c45003.woff2",
+      "static/media/58fcc4ad15255874-s.p.fb334ce4.woff2",
+      "static/media/e9ed0bc71a38d6c1-s.p.084aa6b5.woff2",
+      "static/media/3836391c10060ce4-s.p.492e65f2.woff2",
+      "static/media/a0529e96a7862c0d-s.p.084d1b37.woff2",
+      "static/media/0bbfe7d70ca362ab-s.p.472d51dc.woff2",
+      "static/media/aa35d34c0e23a34f-s.p.0526662a.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

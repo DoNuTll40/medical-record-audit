@@ -1,0 +1,31 @@
+{
+  "pages": {
+    "/dev/pdf/page": [
+      "static/chunks/4c5995903bbb1939.css",
+      "static/chunks/d50d134b36eca41d.css",
+      "static/chunks/428fba15880b7ad8.js",
+      "static/chunks/f921ee0be48357d4.js",
+      "static/chunks/097f98fe363996a1.js",
+      "static/chunks/f13cd53b1173cd79.js",
+      "static/chunks/60d06b9b99674fbd.js",
+      "static/chunks/ba71d23258a58f5d.js",
+      "static/chunks/3b23710c9406690d.js",
+      "static/chunks/a84b61d9bb7b07d5.js",
+      "static/chunks/fc3cd6c6b7af2601.js",
+      "static/chunks/332ad8191dbbef13.js",
+      "static/chunks/45e01d52b652a192.js",
+      "static/chunks/7af85c49c5589d2c.js",
+      "static/chunks/e910616e4d0db445.js",
+      "static/chunks/b97290eab80cbd36.js",
+      "static/chunks/51ff5aca03a880ef.js",
+      "static/chunks/faae86bd52ff0dd0.js",
+      "static/chunks/39d7ce55a3a85ef3.js",
+      "static/chunks/9fb10cdacc91bf29.js",
+      "static/chunks/3cc8923b0bd016fe.js",
+      "static/chunks/f417c1bdb300a885.js",
+      "static/chunks/56a3a7cef15e857c.js",
+      "static/chunks/b67f711f9395d9d7.js",
+      "static/chunks/turbopack-d42ee0956030c1bd.js"
+    ]
+  }
+}
